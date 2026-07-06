@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+
+  mnist-api:
+
+    build: .
+
+    container_name: mnist-ann-api
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped
